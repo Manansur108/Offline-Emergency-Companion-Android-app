@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #0f766e;
+    --color-primary-rgb: 15 118 110;
+  }
+
+  body {
+    @apply bg-background text-slate-950 font-sans antialiased;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(20, 184, 166, 0.22), transparent 34%),
+      linear-gradient(135deg, #effaf7 0%, #e4f4f0 42%, #f8fafc 100%);
+    min-height: 100vh;
+  }
+
+  html.dark body {
+    @apply text-slate-100;
+    background:
+      radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--color-primary) 26%, transparent), transparent 34%),
+      linear-gradient(135deg, #020617 0%, #0f172a 48%, #111827 100%);
+  }
+}
+
+/* Glassmorphism Utilities */
+.glass,
+.glass-card {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+  border-radius: 20px;
+}
+
+html.dark .glass,
+html.dark .glass-card {
+  background: rgba(15, 23, 42, 0.78);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.54);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(15, 118, 110, 0.1);
+  border-radius: 24px;
+}
+
+html.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.62);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark [class*="bg-white"] {
+  background-color: rgba(15, 23, 42, 0.72);
+}
+
+html.dark [class*="text-slate-950"],
+html.dark [class*="text-slate-900"],
+html.dark [class*="text-slate-800"] {
+  color: #f8fafc;
+}
+
+html.dark [class*="text-slate-700"],
+html.dark [class*="text-slate-600"] {
+  color: #cbd5e1;
+}
+
+html.dark [class*="text-slate-500"],
+html.dark [class*="text-slate-400"] {
+  color: #94a3b8;
+}
+
+html.dark [class*="border-teal-900"] {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea,
+input,
+button {
+  touch-action: manipulation;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

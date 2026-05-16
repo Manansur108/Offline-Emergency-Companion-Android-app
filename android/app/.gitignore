@@ -1,0 +1,4 @@
+/build/*
+!/build/.npmkeep
+my-release-key.jks
+keystore.properties

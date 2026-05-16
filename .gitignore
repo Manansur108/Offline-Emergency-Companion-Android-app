@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.tmp
+
+node_modules
+dist
+dist-ssr
+/outputs/
+/Assets/
+/docs/
+/1. Sample Reference Images for Idea/
+*.local
+.env
+.env.*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Android and Capacitor generated/local files
+android/.gradle/
+android/**/build/
+android/local.properties
+ios/App/Pods/
+ios/App/build/
+*.jks
+*.keystore
+[Kk]eystore.properties
+
+# Model files are too large for GitHub; install them onto the phone.
+*.litertlm
+*.gguf
+*.onnx
+*.tflite
+
+# APKs are generated artifacts. Keep only the current share APK in this repo.
+*.apk
+!Latest Emergency Companion.apk
