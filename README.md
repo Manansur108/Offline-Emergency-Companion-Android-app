@@ -2,6 +2,10 @@
 
 Offline-first Android emergency guide and local AI companion built with React, Vite, Capacitor, and a native Android model bridge. Built for moments when the network is gone, the situation is loud, and the next step needs to be clear.
 
+## Demo Video ▶️
+
+Watch the app demo on YouTube: [Emergency Companion demo](https://www.youtube.com/watch?v=4w08K4KkezI)
+
 ## App Preview 📱
 
 ![Emergency Companion Android home screen](public/screenshots/app-emergency-screen.png)
