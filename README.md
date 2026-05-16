@@ -1,8 +1,25 @@
-# Emergency Companion
+# Emergency Companion 🚨
 
-Offline-first Android emergency guide and local AI companion built with React, Vite, Capacitor, and a native Android model bridge.
+Offline-first Android emergency guide and local AI companion built with React, Vite, Capacitor, and a native Android model bridge. Built for moments when the network is gone, the situation is loud, and the next step needs to be clear.
 
-## Install On Android
+## App Preview 📱
+
+![Emergency Companion Android home screen](public/screenshots/app-emergency-screen.png)
+
+## Why It Helps 🧭
+
+![Offline Crisis Companion marketing preview](public/screenshots/offline-crisis-companion-hero.png)
+
+- 🚑 Emergency routing and step-by-step scripts
+- 🔒 Private by design with on-device guidance
+- 🗣️ Voice and text workflows for fast triage
+- 🌍 Offline model setup for multilingual help
+
+## Offline Gemma Help 🌍
+
+![Gemma 4 emergency help language support preview](public/screenshots/gemma4-emergency-help.png)
+
+## Install On Android ⚡
 
 1. Download the APK from this repo:
 
@@ -17,7 +34,7 @@ Offline-first Android emergency guide and local AI companion built with React, V
 
 The app can still show built-in emergency guidance without the AI model. For local AI answers, add the model file below.
 
-## Add The Offline Model
+## Add The Offline Model 🧠
 
 Do not put the model in GitHub. It is several GB and must be copied directly onto the phone.
 
@@ -54,11 +71,11 @@ Android/data/com.manan.offlineai/files/models
 
 Then copy `gemma4_2b_v09_obfus_fix_all_modalities_thinking.litertlm` into it.
 
-## Speech Input
+## Speech Input 🎙️
 
 The app does not bundle a Whisper, Vosk, or separate STT model. Speech input uses Android `SpeechRecognizer` with an offline preference. If voice input does not work offline, install the needed offline language pack in your phone's speech settings, then fully close and reopen the app.
 
-## Build From Source
+## Build From Source 🛠️
 
 Requirements:
 
@@ -83,7 +100,7 @@ The debug APK is generated at:
 android/app/build/outputs/apk/debug/app-debug.apk
 ```
 
-## Notes
+## Notes ✅
 
 - Android package: `com.manan.offlineai`
 - App name: `Manan Surati Offline Crisis Companion`
